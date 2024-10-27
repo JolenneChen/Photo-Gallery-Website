@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&family=Raleway:wght@500;600;700;800;900&display=swap');
+
+*{
+    border: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* set background image to not repeat and cover the entire background */
+body{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #111;
+}
+
+/* nav */
+nav{
+    position: fixed;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0;
+}
+
+nav ul li a{
+    display: block;
+    /* 15px : top bottom, 20px : left right */
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: #555;
+    
+}
+
+.fluid{
+    position: relative;
+    padding: 0px;
+}
+
+.fluid h1{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.fluid-container{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-image: -webkit-gradient(linear,
+        80 bottom, 
+        left 60,
+        color-stop(0,rgb(91,135,115)),
+        color-stop(0,rgb(66,110,110))
+        
+    )
+}
+
+.fluid-container img:hover{
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+#animal-gallery .cute-animals{
+    width: 250px;
+    height: 150px;
+}
